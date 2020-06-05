@@ -37,6 +37,6 @@ jobs:
     - name: installing surge
       run:  npm install -g surge
     - name: deploying on surge
-      run:  /build surge http://reacthappyapp.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+      run:  surge ./build http://reacthappyapp.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
       
 
